@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+i {
+  color: rgb(116, 18, 18);
+  
+}
+.fa-check-circle {
+  color:  rgb(64, 177, 177);
+}
+button {
+  border: none;
+  cursor: pointer;
+  
+}
+.container {
+  width: 90%;
+  margin: 20px auto;
+}
+.container .top {
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  color: #fff;
+  padding-top: 20px;
+  border-radius: 10px;
+  
+}
+.container .top:before {
+  border-radius: 10px;
+  content: "";
+  background: url('../img/bg-top.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.7;
+  box-shadow: inset 50px 50px 100px  rgba(0,0,0,0.9),
+  inset -50px -50px 100px  rgba(0,0,0,0.9);
+  height: 100%;
+  width: 100%;
+}
+.container .top .budget {
+  width: 40%;
+  margin: 10px auto;
+  text-align: center;
+}
+.container .top .budget .budget__value {
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+.container .top .budget .budget__title {
+  font-size: 1.3rem;
+}
+.container .top .budget .budget__income {
+  background-color: rgb(64, 177, 177);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding : 13px 20px; 
+  border-radius: 5px;
+}
+.container .top .budget .budget__income .budget__income--percentage {
+  margin-left: 66px; 
+}
+.container .top .budget .budget__income .right{
+  display: flex;
+}
+.container .top .budget .budget__expenses {
+  background-color: rgb(194, 33, 59);
+  display: flex;
+  padding : 15px 20px;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.container .top .budget .budget__expenses .right {
+  display: flex;
+}
+.container .top .budget .budget__expenses .right .budget__expenses--percentage {
+  margin-left: 30px;
+  border-radius: 3px;
+  color: rgb(54, 20, 26);
+  background-color: cadetblue;
+  padding: 1px 3px;
+}
+.bottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  color: #111;
+  border-radius: 10px;
+  border: cadetblue solid 1px;
+}
+.bottom .container {
+  height: auto;
+  display: flex;
+  width: 80%;
+  overflow: hidden;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+.bottom .add button {
+  position: relative;
+  top: 8px;
+}
+.bottom .add .add__container input, .bottom .add .add__container select {
+  height: 40px;
+  font-size: 1.4rem;
+  border-radius: 3px;
+  border:none;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+.bottom .container .income .income__title {
+  color:  rgb(64, 177, 177);
+  margin: 18px 0;
+  font-size: 1.5rem;
+}
+.bottom .container .expenses .expenses__title {
+  color: rgb(151, 22, 22);
+  font-size: 1.7rem;
+  margin: 15px 0;
+}
+.bottom .container .item {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.bottom .container  .item .right {
+  display: flex;
+  margin-left: 150px;
+}
+.bottom .container .item .right .item__delete button i {
+  margin-left: 15px;
+  color: #fff;
+  width: 0px;
+  height: 0px;
+  transform: translateX(20px);
+  transition: all 0.4s ease-in-out;
+}
+.bottom .container .item .right:hover .item__delete button i {
+  color: rgb(151, 22, 22);
+  transform: translateX(0px);
+}
+.bottom .container .expenses .item .right .item__percentage {
+  margin-left: 20px;
+  background-color: rgb(179, 38, 19);
+  border-radius: 15px;
+  padding: 0 1px;
+  text-align: center;
+}
+.red {
+  color:  #d10e08 !important ;
+  
+}
+.red-focus:focus {
+  border: 2px solid  #830904 !important;
+  outline: none;
+}
+@media (max-width : 700px) {
+  .bottom .container {
+  flex-direction: column;
+}
+.container .top {
+  height: 50vh; 
+}
+.container .top .budget {
+  width: 80%;
+}
+.bottom .add {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+.bottom .add select {
+  width: 80%;
+  margin-bottom: 10px;
+}
+.bottom .add .add__container input {
+  margin-top: 10px;
+  width: 80%;
+}
+ .container {
+  width: 100%;
+} 
+.bottom .container .expenses {
+  border-top: rgb(25, 66, 66) 2px solid;
+}
+
+
+}

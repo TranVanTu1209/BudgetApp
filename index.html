@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+      integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Budgets App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="budget">
+          <div class="budget__title">
+            Available Budget in
+            <span class="budget__title--month">September</span>
+          </div>
+          <div class="budget__value">+ 0</div>
+          <div class="budget__income">
+            <div class="budget__income--text">Income</div>
+            <div class="right">
+              <div class="budget__income--value">+ 0</div>
+              <div class="budget__income--percentage"></div>
+            </div>
+          </div>
+          <div class="budget__expenses">
+            <div class="budget__expenses--text">Expenses</div>
+            <div class="right">
+              <div class="budget__expenses--value">- 0</div>
+              <div class="budget__expenses--percentage">0%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="add">
+          <div class="add__container">
+            <select class="add__type">
+              <option value="income" selected>+</option>
+              <option value="expense">-</option>
+            </select>
+            <input
+              type="text"
+              class="add__description"
+              placeholder="Add description"
+            />
+            <input type="number" class="add__value" placeholder="Value" />
+            <button class="add__btn">
+              <i class="far fa-check-circle fa-3x"></i>
+            </button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="income">
+            <h2 class="income__title">Income</h2>
+            <div class="income__list">
+              <!-- <div class="item" id="income-%id%">
+                  <div class="item__description">%description%</div>
+                  <div class="right">
+                    <div class="item__value">%value%</div>
+                    <div class="item__delete">
+                      <button class="item__delete--btn"><i class="far fa-times-circle fa-2x"></i></button>
+                    </div>
+                  </div>
+                </div> -->
+            </div>
+          </div>
+          <div class="expenses">
+            <h2 class="expenses__title">Expenses</h2>
+            <div class="expenses__list">
+              <!-- <div class="item" id="expense-%id%">
+                <div class="item__description">%description%</div>
+                <div class="right">
+                  <div class="item__value">%value%</div>
+                  <div class="item__percentage">21%</div>
+                  <div class="item__delete"><button class="item__delete--btn"><i class="far fa-times-circle fa-2x"></i></button></div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
